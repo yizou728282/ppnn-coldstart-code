@@ -1,0 +1,33 @@
+\begin{table*}[!htbp]
+\centering
+\caption{Mean CRPS (\textdegree C) at held-out stations, pooled over the 7 station-held-out folds (every station is held out exactly once). \textbf{All networks: 3-seed ensembles} (seeds 0--2; mean of $\mu$ and $\sigma$); single-seed mean $\pm$ sd in parentheses. Bold: lowest CRPS in each original three-seed column (raw ensemble excluded); this is descriptive, not a superiority claim. Ten-seed spatial scores and inference are in Table~\ref{tab:s5spatial} and Section~\ref{sec:res:s5}. German: test year 2016, lead 48\,h; EUPPBench: 2017--2018, leads 24--120\,h. $^\dagger$Declared exploratory in the protocols.}
+\label{tab:main}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{German} & \multicolumn{2}{c}{EUPPBench} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Method & random & spatial & random & spatial \\
+\midrule
+Raw ensemble & 1.1519 & 1.1519 & 1.2113 & 1.2113 \\
+\addlinespace
+EMOS & 1.0097 & 1.0130 & 1.1139 & 1.1395 \\
+Boosted EMOS & 0.9125 & 0.9158 & 0.9625 & \textbf{0.9770} \\
+\addlinespace
+NN-UNK & 0.8706 {\scriptsize (0.882$\pm$0.001)} & 0.8922 {\scriptsize (0.905$\pm$0.007)} & 0.9205 {\scriptsize (0.935$\pm$0.007)} & 0.9832 {\scriptsize (1.000$\pm$0.019)} \\
+NN-kNN & 0.8849 {\scriptsize (0.900$\pm$0.007)} & 0.9070 {\scriptsize (0.924$\pm$0.007)} & 0.9276 {\scriptsize (0.945$\pm$0.009)} & 0.9801 {\scriptsize (1.001$\pm$0.022)} \\
+NN-NoEmb & 0.8580 {\scriptsize (0.866$\pm$0.002)} & \textbf{0.8777} {\scriptsize (0.886$\pm$0.001)} & 0.9427 {\scriptsize (0.955$\pm$0.006)} & 1.0759 {\scriptsize (1.099$\pm$0.025)} \\
+NN-Attr & 0.8563 {\scriptsize (0.867$\pm$0.004)} & 0.9126 {\scriptsize (0.927$\pm$0.008)} & 0.9392 {\scriptsize (0.974$\pm$0.020)} & 1.1560 {\scriptsize (1.213$\pm$0.092)} \\
+NN-Hybrid & 0.8565 {\scriptsize (0.867$\pm$0.005)} & 0.8960 {\scriptsize (0.913$\pm$0.018)} & 0.9309 {\scriptsize (0.953$\pm$0.010)} & 1.1131 {\scriptsize (1.147$\pm$0.033)} \\
+NN-Hybrid-kNN$^\dagger$ & 0.8660 {\scriptsize (0.876$\pm$0.005)} & 0.9067 {\scriptsize (0.923$\pm$0.020)} & 0.9313 {\scriptsize (0.953$\pm$0.010)} & 1.1119 {\scriptsize (1.145$\pm$0.034)} \\
+NN-Hybrid-Res$^\dagger$ & \textbf{0.8531} {\scriptsize (0.862$\pm$0.001)} & 0.8977 {\scriptsize (0.912$\pm$0.007)} & \textbf{0.9134} {\scriptsize (0.930$\pm$0.001)} & 0.9803 {\scriptsize (1.009$\pm$0.008)} \\
+\addlinespace
+DRN & 0.8645 {\scriptsize (0.872$\pm$0.002)} & 0.8795 {\scriptsize (0.887$\pm$0.003)} & 0.9170 {\scriptsize (0.923$\pm$0.001)} & 1.0787 {\scriptsize (1.090$\pm$0.089)} \\
+GNN-Geo & 0.8840 {\scriptsize (0.897$\pm$0.004)} & 0.9048 {\scriptsize (0.917$\pm$0.005)} & 0.9468 {\scriptsize (0.967$\pm$0.005)} & 1.0423 {\scriptsize (1.075$\pm$0.053)} \\
+\addlinespace
+SAMOS-MLP & 0.8544 {\scriptsize (0.867$\pm$0.001)} & 0.8784 {\scriptsize (0.891$\pm$0.004)} & 0.9198 {\scriptsize (0.938$\pm$0.007)} & 1.0023 {\scriptsize (1.026$\pm$0.021)} \\
+SAMOS-Attn & 0.8738 {\scriptsize (0.895$\pm$0.004)} & 0.8865 {\scriptsize (0.906$\pm$0.004)} & 0.9364 {\scriptsize (0.956$\pm$0.020)} & 1.0218 {\scriptsize (1.051$\pm$0.109)} \\
+\bottomrule
+\end{tabular}}
+\end{table*}

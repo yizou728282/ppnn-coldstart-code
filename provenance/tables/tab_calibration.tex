@@ -1,0 +1,30 @@
+\begin{table*}[!htbp]
+\centering
+\caption{Calibration at held-out stations (same 3-seed ensembles as Table~\ref{tab:main}): empirical coverage of the central 80\% interval (nominal 0.80) and spread--skill ratio (RMS $\sigma$ / RMSE of $\mu$; 1 = consistent).}
+\label{tab:calib}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{4}{c}{German} & \multicolumn{4}{c}{EUPPBench} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+ & \multicolumn{2}{c}{random} & \multicolumn{2}{c}{spatial} & \multicolumn{2}{c}{random} & \multicolumn{2}{c}{spatial} \\
+Method & cov80 & SSR & cov80 & SSR & cov80 & SSR & cov80 & SSR \\
+\midrule
+Raw ensemble & 0.395 & 0.43 & 0.395 & 0.43 & 0.512 & 0.58 & 0.512 & 0.58 \\
+EMOS & 0.801 & 0.94 & 0.798 & 0.94 & 0.817 & 0.98 & 0.811 & 0.97 \\
+Boosted EMOS & 0.816 & 1.00 & 0.817 & 1.00 & 0.844 & 1.07 & 0.838 & 1.19 \\
+NN-UNK & 0.748 & 0.86 & 0.751 & 0.86 & 0.788 & 0.94 & 0.776 & 0.94 \\
+NN-kNN & 0.753 & 0.87 & 0.755 & 0.88 & 0.785 & 0.94 & 0.778 & 0.94 \\
+NN-NoEmb & 0.774 & 0.92 & 0.771 & 0.91 & 0.787 & 0.94 & 0.745 & 0.89 \\
+NN-Attr & 0.770 & 0.91 & 0.749 & 0.87 & 0.786 & 0.93 & 0.729 & 0.76 \\
+NN-Hybrid & 0.761 & 0.88 & 0.743 & 0.85 & 0.791 & 0.94 & 0.739 & 0.79 \\
+NN-Hybrid-kNN$^\dagger$ & 0.754 & 0.87 & 0.735 & 0.84 & 0.791 & 0.94 & 0.739 & 0.79 \\
+NN-Hybrid-Res$^\dagger$ & 0.761 & 0.89 & 0.745 & 0.85 & 0.793 & 0.95 & 0.781 & 0.95 \\
+DRN & 0.810 & 0.98 & 0.808 & 0.98 & 0.848 & 1.06 & 0.803 & 0.85 \\
+GNN-Geo & 0.835 & 1.05 & 0.828 & 1.04 & 0.843 & 1.06 & 0.820 & 1.01 \\
+SAMOS-MLP & 0.777 & 0.93 & 0.769 & 0.91 & 0.796 & 0.96 & 0.761 & 0.87 \\
+SAMOS-Attn & 0.734 & 0.83 & 0.749 & 0.86 & 0.777 & 0.92 & 0.772 & 0.83 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

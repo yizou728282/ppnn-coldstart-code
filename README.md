@@ -21,7 +21,7 @@ The main result concerns evaluation design. On EUPPBench, the DRN and geographic
 | `handoff/original_prediction_audit/` | Audit code, field checks and recomputed aggregate results |
 | `NOTES_*.md` | Implementation and experiment records |
 | `prediction_manifests/` | Inventories and SHA-256 checksums of the preserved prediction archives |
-| `provenance/` | Saved numerical reference values (`derived_numbers.json`, `stage5_numbers.json`) |
+| `provenance/` | Saved numerical reference values, table exports and source-file identities |
 | `figure_data/` | Primary random and spatial fold assignments |
 
 ## Interpretation of protocol copies
@@ -54,7 +54,7 @@ Regenerating manuscript files and recomputing statistics from per-seed predictio
 
 ## Verification boundary
 
-The original 2026-09-29 audit reports 1,986 passing score and test field checks and 112 passing core station and seed difference-in-differences checks. Those reports were inspected; training and the full numerical audit were not rerun for this snapshot. Not every auxiliary ranking, fold-block analysis, sensitivity or figure was regenerated. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+The original 2026-09-29 audit reports 1,986 passing score and test field checks and 112 passing core station and seed difference-in-differences checks. Its frozen source versions are included in `handoff/original_prediction_audit/source/`; historical table exports are in `provenance/tables/`. Those reports were inspected; training and the full numerical audit were not rerun for this snapshot. Not every auxiliary ranking, fold-block analysis, sensitivity or figure was regenerated. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
 
 ## Licence and archival status
 

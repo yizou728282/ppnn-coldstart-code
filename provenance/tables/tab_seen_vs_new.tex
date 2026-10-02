@@ -1,0 +1,24 @@
+\begin{table}[!htbp]
+\centering
+\caption{Cost of cold start, random folds: CRPS (\textdegree C) on the fold's own training stations (``seen'', mean over the 7 folds, test period) versus held-out stations (``new''). Gap = new/seen $-1$. \textbf{Networks: 10-seed ensembles} (seeds 0--9), the design of the German and EUPPBench protocols; the ``new'' values therefore differ slightly from the 3-seed values of Table~\ref{tab:main}. Seen and new scores are not computed on the same stations (each station is ``seen'' in 6 of 7 folds).}
+\label{tab:gap}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{German} & \multicolumn{3}{c}{EUPPBench} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Method & seen & new & gap & seen & new & gap \\
+\midrule
+EMOS & 1.009 & 1.010 & +0.0\% & 1.110 & 1.114 & +0.3\% \\
+Boosted EMOS & 0.911 & 0.913 & +0.1\% & 0.954 & 0.963 & +0.9\% \\
+NN-UNK & 0.787 & 0.865 & +9.9\% & 0.822 & 0.912 & +11.0\% \\
+NN-kNN & 0.788 & 0.880 & +11.7\% & 0.822 & 0.919 & +11.8\% \\
+NN-NoEmb & 0.848 & 0.855 & +0.9\% & 0.835 & 0.939 & +12.4\% \\
+NN-Attr & 0.836 & 0.852 & +1.9\% & 0.829 & 0.937 & +13.1\% \\
+NN-Hybrid & 0.785 & 0.852 & +8.5\% & 0.826 & 0.925 & +12.0\% \\
+NN-Hybrid-kNN$^\dagger$ & 0.785 & 0.862 & +9.8\% & 0.826 & 0.925 & +12.1\% \\
+NN-Hybrid-Res$^\dagger$ & 0.783 & 0.851 & +8.7\% & 0.823 & 0.913 & +10.9\% \\
+\bottomrule
+\end{tabular}}
+\end{table}

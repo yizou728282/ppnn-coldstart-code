@@ -1,0 +1,56 @@
+\begin{table*}[!htbp]
+\centering
+\caption{Diebold--Mariano tests on daily-mean CRPS differences (A $-$ B; negative = A better; 3-seed ensembles), Newey--West lag 5, 95\% moving-block bootstrap CI (7-day blocks), Benjamini--Hochberg (BH) at $q=0.05$. The DRN/GNN-Geo comparisons are \emph{descriptive} (pre-specified pairs, BH within dataset $\times$ fold type, no hypothesis registered); pilot tests use BH over the 6 pre-registered tests per dataset. The tests treat the station set as fixed and ignore seed variance (Section~\ref{sec:disc:limits}).}
+\label{tab:tests}
+\scriptsize
+\begin{tabular}{lllrrrrc}
+\toprule
+Data & Folds & A vs B & $\Delta$ & rel.\,\% & DM $p$ & 95\% CI & BH \\
+\midrule
+German & random & GNN-Geo vs NN-UNK & +0.0134 & +1.54 & 0.0021 & [+0.0064, +0.0220] & yes \\
+German & random & GNN-Geo vs NN-kNN & -0.0009 & -0.11 & 0.9 & [-0.0158, +0.0149] & no \\
+German & random & GNN-Geo vs Boosted EMOS & -0.0285 & -3.13 & 1.8e-06 & [-0.0376, -0.0154] & yes \\
+German & random & GNN-Geo vs DRN & +0.0195 & +2.26 & 4.2e-13 & [+0.0150, +0.0253] & yes \\
+German & random & DRN vs NN-NoEmb & +0.0065 & +0.75 & 0.021 & [+0.0015, +0.0120] & yes \\
+German & random & DRN vs NN-UNK & -0.0061 & -0.70 & 0.055 & [-0.0117, +0.0004] & no \\
+German & random & DRN vs Boosted EMOS & -0.0480 & -5.26 & $<10^{-15}$ & [-0.0552, -0.0383] & yes \\
+German & random & SAMOS-Attn vs NN-UNK & +0.0032 & +0.37 & 0.24 & [-0.0013, +0.0092] & no \\
+German & random & SAMOS-Attn vs NN-kNN & -0.0111 & -1.25 & 0.14 & [-0.0261, +0.0042] & no \\
+German & random & SAMOS-Attn vs Boosted EMOS & -0.0387 & -4.24 & 2.9e-12 & [-0.0480, -0.0265] & yes \\
+\addlinespace
+German & spatial & GNN-Geo vs NN-UNK & +0.0125 & +1.41 & 0.013 & [+0.0037, +0.0232] & yes \\
+German & spatial & GNN-Geo vs NN-kNN & -0.0023 & -0.25 & 0.8 & [-0.0206, +0.0166] & no \\
+German & spatial & GNN-Geo vs Boosted EMOS & -0.0110 & -1.20 & 0.057 & [-0.0202, +0.0019] & no \\
+German & spatial & GNN-Geo vs DRN & +0.0253 & +2.88 & $<10^{-15}$ & [+0.0202, +0.0311] & yes \\
+German & spatial & DRN vs NN-NoEmb & +0.0018 & +0.20 & 0.53 & [-0.0033, +0.0074] & no \\
+German & spatial & DRN vs NN-UNK & -0.0128 & -1.43 & 0.0012 & [-0.0198, -0.0045] & yes \\
+German & spatial & DRN vs Boosted EMOS & -0.0363 & -3.96 & 1.9e-14 & [-0.0441, -0.0262] & yes \\
+German & spatial & SAMOS-Attn vs NN-UNK & -0.0057 & -0.64 & 0.1 & [-0.0122, +0.0016] & no \\
+German & spatial & SAMOS-Attn vs NN-kNN & -0.0205 & -2.26 & 0.011 & [-0.0372, -0.0042] & yes \\
+German & spatial & SAMOS-Attn vs Boosted EMOS & -0.0293 & -3.20 & 1e-08 & [-0.0380, -0.0184] & yes \\
+\addlinespace
+EUPPBench & random & GNN-Geo vs NN-UNK & +0.0263 & +2.85 & $<10^{-15}$ & [+0.0229, +0.0299] & yes \\
+EUPPBench & random & GNN-Geo vs NN-kNN & +0.0192 & +2.07 & 6.2e-15 & [+0.0143, +0.0241] & yes \\
+EUPPBench & random & GNN-Geo vs Boosted EMOS & -0.0157 & -1.63 & 3.6e-06 & [-0.0226, -0.0086] & yes \\
+EUPPBench & random & GNN-Geo vs DRN & +0.0298 & +3.25 & $<10^{-15}$ & [+0.0269, +0.0330] & yes \\
+EUPPBench & random & DRN vs NN-NoEmb & -0.0257 & -2.72 & $<10^{-15}$ & [-0.0292, -0.0219] & yes \\
+EUPPBench & random & DRN vs NN-UNK & -0.0035 & -0.38 & 0.022 & [-0.0067, -0.0006] & yes \\
+EUPPBench & random & DRN vs Boosted EMOS & -0.0455 & -4.73 & $<10^{-15}$ & [-0.0534, -0.0379] & yes \\
+EUPPBench & random & SAMOS-Attn vs NN-UNK & +0.0159 & +1.72 & 1.1e-07 & [+0.0101, +0.0226] & yes \\
+EUPPBench & random & SAMOS-Attn vs NN-kNN & +0.0088 & +0.95 & 0.0036 & [+0.0031, +0.0154] & yes \\
+EUPPBench & random & SAMOS-Attn vs Boosted EMOS & -0.0261 & -2.71 & 1.2e-07 & [-0.0359, -0.0158] & yes \\
+\addlinespace
+EUPPBench & spatial & GNN-Geo vs NN-UNK & +0.0591 & +6.02 & $<10^{-15}$ & [+0.0519, +0.0674] & yes \\
+EUPPBench & spatial & GNN-Geo vs NN-kNN & +0.0622 & +6.35 & $<10^{-15}$ & [+0.0550, +0.0706] & yes \\
+EUPPBench & spatial & GNN-Geo vs Boosted EMOS & +0.0653 & +6.69 & $<10^{-15}$ & [+0.0554, +0.0758] & yes \\
+EUPPBench & spatial & GNN-Geo vs DRN & -0.0364 & -3.37 & $<10^{-15}$ & [-0.0439, -0.0281] & yes \\
+EUPPBench & spatial & DRN vs NN-NoEmb & +0.0028 & +0.26 & 0.62 & [-0.0085, +0.0140] & no \\
+EUPPBench & spatial & DRN vs NN-UNK & +0.0955 & +9.71 & $<10^{-15}$ & [+0.0874, +0.1039] & yes \\
+EUPPBench & spatial & DRN vs Boosted EMOS & +0.1017 & +10.41 & $<10^{-15}$ & [+0.0907, +0.1128] & yes \\
+EUPPBench & spatial & SAMOS-Attn vs NN-UNK & +0.0387 & +3.93 & 1.6e-09 & [+0.0261, +0.0530] & yes \\
+EUPPBench & spatial & SAMOS-Attn vs NN-kNN & +0.0417 & +4.26 & 8.3e-11 & [+0.0292, +0.0560] & yes \\
+EUPPBench & spatial & SAMOS-Attn vs Boosted EMOS & +0.0448 & +4.59 & 1.2e-08 & [+0.0296, +0.0621] & yes \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table*}

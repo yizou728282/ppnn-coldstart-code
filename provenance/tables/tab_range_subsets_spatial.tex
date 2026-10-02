@@ -1,0 +1,33 @@
+\begin{table*}[!htbp]
+\centering
+\caption{\textbf{Exploratory, post hoc.} Pairwise comparisons within the in-range and out-of-range subsets of Table~\ref{tab:groups} (spatial folds, 3-seed ensembles). $\Delta$ = CRPS(A) $-$ CRPS(B) (negative: A better); DM $p$ on daily means (Newey--West lag 5), \emph{not} corrected for multiplicity and not part of any pre-registered family; ``st.'' = fraction of stations in the subset where A has the lower station-mean CRPS (descriptive; stations are not independent); ``contrib.'' = contribution of the subset to the pooled all-station $\Delta$ (the two contributions sum to the pooled $\Delta$).}
+\label{tab:range}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+ & & \multicolumn{4}{c}{in range} & \multicolumn{4}{c}{out of range} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+A vs B & pooled $\Delta$ & $\Delta$ & DM $p$ & st. & contrib. & $\Delta$ & DM $p$ & st. & contrib. \\
+\midrule
+\multicolumn{10}{l}{\textit{German: 473 stations in range, 29 out of range}} \\
+DRN vs Boosted EMOS & -0.036 & -0.037 & 7.3e-15 & 0.87 & -0.035 & -0.023 & 0.053 & 0.72 & -0.001 \\
+DRN vs SAMOS-Attn & -0.007 & -0.001 & 0.7 & 0.48 & -0.001 & -0.099 & 7.9e-11 & 0.55 & -0.006 \\
+DRN vs NN-Hybrid-Res$^\dagger$ & -0.018 & -0.008 & 0.039 & 0.44 & -0.007 & -0.190 & $<10^{-15}$ & 0.55 & -0.011 \\
+NN-Hybrid-Res$^\dagger$ vs Boosted EMOS & -0.018 & -0.030 & 2.1e-07 & 0.76 & -0.028 & +0.167 & 2.8e-10 & 0.52 & +0.010 \\
+GNN-Geo vs Boosted EMOS & -0.011 & -0.017 & 0.0035 & 0.58 & -0.016 & +0.080 & 2.8e-05 & 0.28 & +0.005 \\
+NN-Hybrid vs NN-Hybrid-Res$^\dagger$ & -0.002 & +0.001 & 0.34 & 0.45 & +0.001 & -0.051 & 6.3e-06 & 0.59 & -0.003 \\
+NN-UNK vs Boosted EMOS & -0.024 & -0.023 & 3.1e-05 & 0.73 & -0.022 & -0.026 & 0.0065 & 0.69 & -0.002 \\
+\addlinespace
+\multicolumn{10}{l}{\textit{EUPPBench: 96 stations in range, 21 out of range}} \\
+DRN vs Boosted EMOS & +0.102 & -0.030 & 8e-13 & 0.77 & -0.025 & +0.698 & $<10^{-15}$ & 0.43 & +0.126 \\
+DRN vs SAMOS-Attn & +0.057 & -0.002 & 0.48 & 0.46 & -0.002 & +0.323 & $<10^{-15}$ & 0.43 & +0.058 \\
+DRN vs NN-Hybrid-Res$^\dagger$ & +0.098 & -0.016 & 1.6e-08 & 0.50 & -0.013 & +0.617 & $<10^{-15}$ & 0.29 & +0.112 \\
+NN-Hybrid-Res$^\dagger$ vs Boosted EMOS & +0.003 & -0.014 & 0.003 & 0.61 & -0.011 & +0.081 & $<10^{-15}$ & 0.62 & +0.015 \\
+GNN-Geo vs Boosted EMOS & +0.065 & +0.015 & 0.00015 & 0.69 & +0.012 & +0.292 & $<10^{-15}$ & 0.29 & +0.053 \\
+NN-Hybrid vs NN-Hybrid-Res$^\dagger$ & +0.133 & +0.035 & $<10^{-15}$ & 0.21 & +0.029 & +0.576 & $<10^{-15}$ & 0.14 & +0.104 \\
+NN-UNK vs Boosted EMOS & +0.006 & -0.020 & 1.6e-05 & 0.71 & -0.016 & +0.124 & $<10^{-15}$ & 0.43 & +0.022 \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table*}

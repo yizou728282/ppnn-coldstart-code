@@ -18,7 +18,9 @@ The manuscript and the journal submission package are not in this repository. No
 
 ## Internal registration history
 
-Protocol analysis definitions, dates and decision rules are retained; publication wording edits are documented in PUBLIC_FILES.json. The publication repository starts with a new history and does not independently expose the original development commit chronology. Internal registration must not be represented as external preregistration.
+Protocol analysis definitions, dates and decision rules are retained. PUBLIC_FILES.json preserves the source inventory and wording-edit record of the earlier publication snapshot; it is a historical provenance record rather than an inventory of this repository. Paths and file identities for the frozen audit sources and saved table exports are recorded in `provenance/file_origins.json`. The publication repository starts with a new history and does not independently expose the original development commit chronology. Internal registration must not be represented as external preregistration.
+
+The exact source versions used by the 2026-09-29 audit are included in `handoff/original_prediction_audit/source/`, with SHA-256 checksums. The audit loaders can use these files without retrieving the historical source commit. Provider observations, aligned metadata and the recorded audit-workspace layout are still required for numerical replay.
 
 ## Public original prediction release
 

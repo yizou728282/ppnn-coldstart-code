@@ -1,0 +1,172 @@
+{
+  "files": [
+    {
+      "path": "PUBLIC_FILES.json",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "PUBLIC_FILES.json",
+      "sha256": "055d35a04af39ad4ea66392fd3a5edffc8ce04a8a6ab655d2cf0c0622467c5bb"
+    },
+    {
+      "path": "handoff/original_prediction_audit/source/metrics.py",
+      "source_repository": "yizou728282/ppnn-coldstart",
+      "source_commit": "8858ddbcffb146d82030a2ba126502eb0c4784be",
+      "source_path": "src/ppnn_residual/metrics.py",
+      "sha256": "b763ff633c8c194a43061949360639302a9a3b584fd41d4c1ae6d693c1ce3090"
+    },
+    {
+      "path": "handoff/original_prediction_audit/source/stage5_inference.py",
+      "source_repository": "yizou728282/ppnn-coldstart",
+      "source_commit": "8858ddbcffb146d82030a2ba126502eb0c4784be",
+      "source_path": "scripts/stage5_inference.py",
+      "sha256": "2fc42cb8574b403d08cc743199cb2d688d335497cb5c1556ff7e782a06ec27a0"
+    },
+    {
+      "path": "handoff/original_prediction_audit/source/stage5_supplementary.json",
+      "source_repository": "yizou728282/ppnn-coldstart",
+      "source_commit": "8858ddbcffb146d82030a2ba126502eb0c4784be",
+      "source_path": "protocols/stage5_supplementary.json",
+      "sha256": "1dceb2b4fd7437314ab27f8edb3394f11e28ef91d8dbc0281198fd2a29770cb4"
+    },
+    {
+      "path": "provenance/tables/main_crps_long.csv",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/main_crps_long.csv",
+      "sha256": "6111c24153fca73b9638eca2c685bf827798f71e49ade8bc9fcf0165700ad40d"
+    },
+    {
+      "path": "provenance/tables/per_fold_euppbench_random.csv",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/per_fold_euppbench_random.csv",
+      "sha256": "97d79af8e11ba6aa63b325136c43d4265315200ba27bf34cb26fe885cea5989d"
+    },
+    {
+      "path": "provenance/tables/per_fold_euppbench_spatial.csv",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/per_fold_euppbench_spatial.csv",
+      "sha256": "c3e11a3b4dd42a41ebf4c77031412058029545f0f8c9cf4baacac3a53a2ed6a2"
+    },
+    {
+      "path": "provenance/tables/per_fold_german_random.csv",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/per_fold_german_random.csv",
+      "sha256": "bea59fd22266996ef0c9611d4eaae6151883d47f6160c474df7a63ddf1ec4658"
+    },
+    {
+      "path": "provenance/tables/per_fold_german_spatial.csv",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/per_fold_german_spatial.csv",
+      "sha256": "0f2b5fbcd3d1d31ef528b5d5b376a4c401fefd3f4fd9d78ea0f0d94e5e972224"
+    },
+    {
+      "path": "provenance/tables/tab_calibration.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_calibration.tex",
+      "sha256": "ec857aa8abc3d7c8cf3868b9db9c5a4226712603994c578add36fe7e02cbae9c"
+    },
+    {
+      "path": "provenance/tables/tab_main_crps.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_main_crps.tex",
+      "sha256": "c307a32dd493d0c4226bc821f44ed2d0e560ab0a967a2183c53e2c2b4c3cd520"
+    },
+    {
+      "path": "provenance/tables/tab_pilot.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_pilot.tex",
+      "sha256": "23d5e869cb6ad4b8014f74174f4280b0067fc0e67da55d018756d59cc19410f5"
+    },
+    {
+      "path": "provenance/tables/tab_primary_hybrid.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_primary_hybrid.tex",
+      "sha256": "53c5585c6679a4323e0c66c9c90d7a4cb343b12e0795bf36f6da147825427c98"
+    },
+    {
+      "path": "provenance/tables/tab_range_subsets_spatial.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_range_subsets_spatial.tex",
+      "sha256": "86ba890a0f01ede6c034bf79168f7a89e239553060c0dc0391d578ce53a2700e"
+    },
+    {
+      "path": "provenance/tables/tab_seen_vs_new.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_seen_vs_new.tex",
+      "sha256": "e8d5de8ea9597f6292131e8f3e301bcc3edae1ee2f17e940313611205a5af9f9"
+    },
+    {
+      "path": "provenance/tables/tab_stage5_boosting.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_stage5_boosting.tex",
+      "sha256": "102310aad7a751ba8540ba6158e89939af419aac21ecfb584b306eba45cec128"
+    },
+    {
+      "path": "provenance/tables/tab_stage5_did.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_stage5_did.tex",
+      "sha256": "a6f9fca200f4c9626181864ee2b8534b3f544138d3b75890199fc370495702ef"
+    },
+    {
+      "path": "provenance/tables/tab_stage5_m1a.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_stage5_m1a.tex",
+      "sha256": "ad60be1aa6f7cbb0c222d30a142960ed195e15a91fc95a07d752198a01827720"
+    },
+    {
+      "path": "provenance/tables/tab_stage5_partitions.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_stage5_partitions.tex",
+      "sha256": "7e6fd9f80c1749bdd809c329b9e740901f74d1310496b5f81ab0b3cbcc23908c"
+    },
+    {
+      "path": "provenance/tables/tab_stage5_spatial.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_stage5_spatial.tex",
+      "sha256": "0945928fdb0812873f3b7b5764b20c89a6445d87e909e896223a97dd29f68462"
+    },
+    {
+      "path": "provenance/tables/tab_station_groups_spatial.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_station_groups_spatial.tex",
+      "sha256": "3be6fb2fe1531d3a924842950f449f5388aefc975a5ecfa2ffa35a54a4d840f9"
+    },
+    {
+      "path": "provenance/tables/tab_tests.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_tests.tex",
+      "sha256": "5e12bcfcc06c85651f29e9ecc145f0147ae4953e6087a9f5dd277b4b1795a3d3"
+    },
+    {
+      "path": "provenance/tables/tab_review_block_did.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_review_block_did.tex",
+      "sha256": "8e93ebcbd79d474b41ac16772c971699346d54f6cdbd0c51de6e90944968dc9f"
+    },
+    {
+      "path": "provenance/tables/tab_review_matched_did.tex",
+      "source_repository": "yizou728282/ppnn-coldstart-v1.1.0-original-predictions",
+      "source_commit": "395ba753102c5a2ebf9503b9bd6a212dce05060f",
+      "source_path": "paper/tables/tab_review_matched_did.tex",
+      "sha256": "d8e52cf111fd21f0f5dc46acdf84a20aa1ea6a98a6387f7fc0778698c578cddb"
+    }
+  ]
+}

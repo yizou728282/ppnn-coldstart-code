@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering
+\caption{Pre-registered pilot (SAMOS-Attn) against the best of the three primary comparators on each fold type (3-seed ensembles). $\Delta$ = CRPS(SAMOS-Attn) $-$ CRPS(best); negative favours the pilot. GO required a BH-significant spatial improvement with bootstrap CI excluding 0 and a same-sign random-fold improvement. Last column: single-seed CRPS of SAMOS-Attn for seeds 0/1/2.}
+\label{tab:pilot}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llccccccc}
+\toprule
+Data & Folds & best comparator & CRPS best & CRPS pilot & $\Delta$ & DM $p$ & BH & seeds 0/1/2 \\
+\midrule
+German & random & NN-UNK & 0.8706 & 0.8738 & +0.0032 & 0.24 & no & 0.896/0.899/0.891 \\
+German & spatial & NN-UNK & 0.8922 & 0.8865 & -0.0057 & 0.1 & no & 0.910/0.903/0.905 \\
+\multicolumn{9}{r}{Decision: \textbf{NO-GO}} \\
+\addlinespace
+EUPPBench & random & NN-UNK & 0.9205 & 0.9364 & +0.0159 & 1.1e-07 & yes & 0.945/0.944/0.979 \\
+EUPPBench & spatial & Boosted EMOS & 0.9770 & 1.0218 & +0.0448 & 1.2e-08 & yes & 0.984/1.177/0.991 \\
+\multicolumn{9}{r}{Decision: \textbf{NO-GO}} \\
+\addlinespace
+\bottomrule
+\end{tabular}}
+\end{table}
