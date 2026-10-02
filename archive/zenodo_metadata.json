@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "title": "Transfer of neural ensemble temperature post-processing to unobserved stations: random and spatially blocked evaluation \u2014 research code and reproducibility materials",
+    "upload_type": "software",
+    "creators": [
+      {
+        "name": "Zou, Yi",
+        "affiliation": "Independent researcher, Xi'an, China"
+      }
+    ],
+    "description": "Research code, staged working plans, aggregate results and audit records for random and spatially blocked evaluation of temperature post-processing. The manuscript and journal submission package are not part of this record. Original observations are supplied separately by their data providers under their licences. Preserved per-seed prediction checksums are in prediction_manifests/. The archive shards are GitHub Release assets of tag v1.1.0-original-predictions, not files stored in Git. No new experiments were performed for this code snapshot.",
+    "access_right": "open",
+    "license": "mit",
+    "keywords": [
+      "Ensemble post-processing",
+      "Unobserved stations",
+      "Spatial cross-validation",
+      "Neural networks",
+      "Temperature forecasts"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/yizou728282/ppnn-coldstart-code",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ]
+  }
+}
